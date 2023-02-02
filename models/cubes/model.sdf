@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="Apple cube">
+    <static>false</static>
+    <link name="apple">
+    <pose>0 0 0.04 0 0 0</pose>
+      <collision name="body_collision">
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="body_visual">
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      <material>
+            <script>
+        <uri>model://cubes/materials/scripts</uri>
+        <uri>model://cubes/materials/textures</uri>
+        <name>RepeatedTexture_apple</name>
+            </script>
+      </material>
+      </visual>
+    </link>
+    <link name="banana">
+      <pose>-0.25 0 0.04 0 0 0</pose>
+      <collision name="body_collision">
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="body_visual">
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      <material>
+            <script>
+        <uri>model://cubes/materials/scripts</uri>
+        <uri>model://cubes/materials/textures</uri>
+        <name>RepeatedTexture_banan</name>
+            </script>
+      </material>
+      </visual>
+    </link>
+    <link name="pear">
+      <pose>0.25 0 0.04 0 0 0</pose>
+      <collision name="body_collision">
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="body_visual">
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      <material>
+            <script>
+        <uri>model://cubes/materials/scripts</uri>
+        <uri>model://cubes/materials/textures</uri>
+        <name>RepeatedTexture_pear</name>
+            </script>
+      </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
